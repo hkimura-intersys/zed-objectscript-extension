@@ -1,0 +1,24 @@
+id = "objectscript"
+name = "InterSystems ObjectScript"
+version = "0.1.0"
+schema_version = 1
+authors = [
+    "Hannah Kimura <hannah.kimura@intersystems.com>",
+    "Dave McCaldon <davem@intersystems.com>"
+]
+description = "InterSystems IRIS ObjectScript Extension"
+repository = "https://github.com/hkimura-intersys/zed-objectscript-extension"
+
+[grammars.objectscript]
+repository = "https://github.com/intersystems/tree-sitter-objectscript"
+commit = "c61c362267b8fd93ab55c560d4901b784b0b63e7"
+path = "udl"
+
+[grammars.objectscript_core]
+repository = "https://github.com/intersystems/tree-sitter-objectscript"
+commit = "c61c362267b8fd93ab55c560d4901b784b0b63e7"
+path = "core"
+
+[language_servers.objectscript-lsp]
+name = "objectscript-lsp"
+languages = ["objectscript", "objectscript_core"]
