@@ -4,10 +4,19 @@ version = "1.0.0"
 schema_version = 1
 authors = ["Dave McCaldon <davem@intersystems.com>","Hannah Kimura <hannah.kimura@intersystems.com>"]
 description = "InterSystems IRIS ObjectScript Routine Extension"
-repository = "https://github.com/hkimura-intersys/zed-objectscript-extension"
+repository = "https://github.com/intersystems/zed-objectscript-extension"
 
-[grammars.objectscript_routine]
+[grammars.objectscript_udl]
 repository = "https://github.com/intersystems/tree-sitter-objectscript"
 commit = "e492601cb5b4564fdf41e5a1800432a3ee4cf74f"
-path = "objectscript_routine"
+path = "udl"
 
+[grammars.objectscript]
+repository = "https://github.com/intersystems/tree-sitter-objectscript"
+commit = "e492601cb5b4564fdf41e5a1800432a3ee4cf74f"
+path = "objectscript"
+
+[grammars.xml]
+repository = "https://github.com/tree-sitter-grammars/tree-sitter-xml"
+commit = "5000ae8f22d11fbe93939b05c1e37cf21117162d"
+path = "xml"
