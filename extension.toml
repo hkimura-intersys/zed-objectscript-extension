@@ -6,17 +6,27 @@ authors = [
     "Hannah Kimura <hannah.kimura@intersystems.com>",
     "Dave McCaldon <davem@intersystems.com>"
 ]
-description = "InterSystems IRIS ObjectScript Extension"
+description = "ObjectScript Language Support"
 repository = "https://github.com/hkimura-intersys/zed-objectscript-extension"
 
+#[grammars.objectscript]
+#repository = "https://github.com/intersystems/tree-sitter-objectscript"
+#commit = "c61c362267b8fd93ab55c560d4901b784b0b63e7"
+#path = "udl"
+#
+#[grammars.objectscript_core]
+#repository = "https://github.com/intersystems/tree-sitter-objectscript"
+#commit = "c61c362267b8fd93ab55c560d4901b784b0b63e7"
+#path = "core"
+
 [grammars.objectscript]
-repository = "https://github.com/intersystems/tree-sitter-objectscript"
-commit = "c61c362267b8fd93ab55c560d4901b784b0b63e7"
+repository = "https://github.com/hkimura-intersys/tree-sitter-objectscript"
+commit = "932bda0f8ed9cc5a99ad8ee1d74c17dcf32d3fcd"
 path = "udl"
 
 [grammars.objectscript_core]
-repository = "https://github.com/intersystems/tree-sitter-objectscript"
-commit = "c61c362267b8fd93ab55c560d4901b784b0b63e7"
+repository = "https://github.com/hkimura-intersys/tree-sitter-objectscript"
+commit = "932bda0f8ed9cc5a99ad8ee1d74c17dcf32d3fcd"
 path = "core"
 
 [language_servers.objectscript-lsp]

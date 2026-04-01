@@ -282,9 +282,9 @@ dependencies = [
 
 [[package]]
 name = "id-arena"
-version = "2.2.1"
+version = "2.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "25a2bc672d1148e28034f176e01fffebb08b35768468cc954630da77a1449005"
+checksum = "3d3067d79b975e8844ca9eb072e16b31c3c1c36928edf9c6789548c524d0d954"
 
 [[package]]
 name = "idna"
@@ -745,6 +745,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "zed-objectscript-extension"
+version = "0.1.0"
+dependencies = [
+ "zed_extension_api",
+]
+
+[[package]]
 name = "zed_extension_api"
 version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -753,13 +760,6 @@ dependencies = [
  "serde",
  "serde_json",
  "wit-bindgen",
-]
-
-[[package]]
-name = "zed_objectscript"
-version = "0.1.0"
-dependencies = [
- "zed_extension_api",
 ]
 
 [[package]]

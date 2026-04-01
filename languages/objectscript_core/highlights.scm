@@ -1,9 +1,4 @@
-; -------------- Expression Highlights -------------
 
-
-; Variables
-; ^| e.g. '^||ppg', 'do', 'D'
-; -----------------------------------------
 (gvn) @variable.special
 (ssvn) @variable.special
 (lvn) @variable
@@ -44,8 +39,10 @@
   (class_ref (class_name) @type.definition)
   (method_name) @function.method.call
   )
-(oref_method (method_name) @function.method.call)
 
+(relative_dot_method
+  (method_name) @function.method.call
+  )
 (_ preproc_keyword: (_) @keyword.directive)
 (_ modifier: (_) @keyword.directive)
 
@@ -72,6 +69,8 @@
 (etrap_token) @etrap
 (estack_token) @estack
 (roles_token) @roles
+
+;; inherits: objectscript_expr
 ; -------------- Objectscript Core -------------
 ; Commands
 ; e.g. 'set', 'do', 'D'
