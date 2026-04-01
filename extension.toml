@@ -1,4 +1,4 @@
-id = "objectscript"
+id = "objectscript-routine"
 name = "InterSystems ObjectScript Routine"
 version = "1.0.0"
 schema_version = 1
