@@ -1,0 +1,10 @@
+name = "objectscript_routine"
+grammar = "objectscript_routine"
+path_suffixes = ["inc", "mac", "int", "rtn"]
+line_comments = ["// ", ";", ";;", "#;"]
+autoclose_before = ";:.,=}])>` \n\t\""
+brackets = [
+    { start = "{", end = "}", close = true, newline = true },
+    { start = "[", end = "]", close = true, newline = false },
+    { start = "(", end = ")", close = true, newline = false },
+]
