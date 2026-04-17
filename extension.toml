@@ -25,3 +25,7 @@ path = "objectscript"
 repository = "https://github.com/tree-sitter-grammars/tree-sitter-xml"
 commit = "5000ae8f22d11fbe93939b05c1e37cf21117162d"
 path = "xml"
+
+[language_servers.objectscript-lsp]
+name = "objectscript-lsp"
+languages = ["objectscript_udl", "objectscript_routine"]
