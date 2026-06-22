@@ -31,10 +31,14 @@ impl ObjectScriptExtension {
         // 1) settings.binary.path
         // 2) PATH lookup in the worktree environment
         // 3) Zed-managed download from GitHub releases
-        let path = binary
+        let path = if let Some(path) = binary
             .and_then(|b| b.path)
             .or_else(|| worktree.which("objectscript-lsp"))
-            .unwrap_or(self.zed_managed_binary_path(language_server_id)?);
+        {
+            path
+        } else {
+            self.zed_managed_binary_path(language_server_id)?
+        };
         Ok(ObjectScriptBinary { path, args })
     }
 
